@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "blog_text_to_html/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "blog_text_to_html/wsgi.py"
+      }
+    ]
+}
